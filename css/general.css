@@ -8,6 +8,10 @@
 html {
   background-color: #6699CC;
   font: normal 100%/1.4 'Rosario', sans-serif;
+
+}
+
+.home {
   background-image:url(../images/me.jpg);
   background-repeat:no-repeat;
   background-position:right top;
@@ -29,9 +33,21 @@ article {
 
 }
 
+.social-media-2 img {
+  padding: 2%;
+  display: inline-block;
+  width: 15%;
+
+}
+
 .social-media {
   padding-left: -10em;
   padding-bottom: 20%;
+}
+
+.social-media-2 {
+  padding-left: -10em;
+  padding-bottom: 5%;
 }
 
 .name-card {
@@ -48,6 +64,7 @@ article {
   padding: .5% 8% 2% 8%;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  overflow: hidden;
 }
 
 h1 {
@@ -79,6 +96,31 @@ span {
   width: 100%;
 }
 
+.button {
+  font-variant: none;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+
+  background-color: #CCC;
+  margin-left: -1%;
+  margin-bottom: 3%;
+  padding: 4% 5%;
+  float: left;
+  clear: all;
+  border-radius: 5px;
+}
+
+.my-work {
+  background-color: #FFF;
+  padding: 3% 4% 3% 4%;
+  margin-bottom: 2%;
+  border-radius: 5px;
+  width: 90%;
+}
+
+
+/* Media Queries Start here */
 
 @media only screen and (min-width: 25em) {
 
@@ -94,11 +136,16 @@ h1 {
   margin-top: 4%;
 }
 
+.button {
+  padding: 2% 3%;
+}
+
 }
 
 @media only screen and (min-width: 35em) {
 
-.social-media img {
+.social-media img,
+.social-media-2 img {
   width: 8%;
   display: inline-block;
 }
@@ -126,7 +173,8 @@ h1 {
 
 @media only screen and (min-width: 56em) {
 
-.social-media img {
+.social-media img,
+.social-media-2 img {
   width: 5%;
 }
 
@@ -159,18 +207,23 @@ h1 {
 
 }
 
+.button {
+  padding: 4% 5%;
+}
+
 }
 
 @media only screen and (min-width: 60em) {
 
-html {
+.home {
   background-repeat:no-repeat;
   background-position:right top;
   background-size: 70%;
 }
 
-.social-media img {
-  padding: 1% 1% 2% 1%;
+.social-media img,
+.social-media-2 img {
+  padding: 1% 1% 1.1% 1%;
 }
 
 .content {
