@@ -122,6 +122,17 @@ span {
   width: 92%;
 }
 
+.page-end {
+  padding: 1% 2% 1% 0%;
+  border-top: 2px;
+  border-color: #fff;
+  float: left;
+  width: 100%;
+
+  font-size: .75em;
+  color: #fff;
+}
+
 
 /* Media Queries Start here */
 
