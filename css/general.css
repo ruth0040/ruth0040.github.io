@@ -8,7 +8,7 @@
 html {
   background-color: #6699CC;
   font: normal 100%/1.4 'Rosario', sans-serif;
-
+  min-width: 228px;
 }
 
 .home {
@@ -46,13 +46,13 @@ article {
 }
 
 .social-media img {
-  padding: 2%;
+  padding: 2% 2% 2% 0%;
   display: block;
   width: 15%;
 }
 
 .social-media-2 img {
-  padding: 2%;
+  padding: 2% 2% 2% 0%;
   display: inline-block;
   width: 15%;
 
@@ -65,7 +65,7 @@ article {
 
 .social-media-2 {
   padding-left: -10em;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
 }
 
 .name-card {
@@ -119,7 +119,7 @@ span {
   padding: 3% 4% 3% 4%;
   margin-bottom: 2%;
   border-radius: 5px;
-  width: 90%;
+  width: 92%;
 }
 
 
@@ -127,7 +127,8 @@ span {
 
 @media only screen and (min-width: 25em) {
 
-.social-media img {
+.social-media img,
+.social-media-2 img {
   width: 9%
 }
 
@@ -149,8 +150,9 @@ h1 {
 
 .social-media img,
 .social-media-2 img {
-  width: 8%;
+  width: 7%;
   display: inline-block;
+  padding: 2% 2% 2% 0%;
 }
 
   .social-media {
@@ -226,7 +228,7 @@ h1 {
 
 .social-media img,
 .social-media-2 img {
-  padding: 1% 1% 1.1% 1%;
+  padding: 1% 1% 1.1% 0%;
 }
 
 .content {
