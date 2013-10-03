@@ -26,11 +26,29 @@ article {
 
 }
 
+.nav-top {
+  width: 96%;
+  padding: 2%;
+  background-color: #FFF;
+  border-radius: 5px;
+
+  text-align: center;
+
+  margin-top: -.2em;
+}
+
+.nav-top a {
+  text-decoration: none;
+  padding: 1% 2%;
+  color: #000;
+  font-weight: bold;
+
+}
+
 .social-media img {
   padding: 2%;
   display: block;
   width: 15%;
-
 }
 
 .social-media-2 img {
@@ -92,23 +110,8 @@ span {
   font-weight: bold;
 }
 
-.my-pic {
+.my-work img {
   width: 100%;
-}
-
-.button {
-  font-variant: none;
-  font-size: 1.1em;
-  font-weight: bold;
-  text-align: center;
-
-  background-color: #CCC;
-  margin-left: -1%;
-  margin-bottom: 3%;
-  padding: 4% 5%;
-  float: left;
-  clear: all;
-  border-radius: 5px;
 }
 
 .my-work {
