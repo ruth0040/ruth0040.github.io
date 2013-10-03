@@ -8,7 +8,7 @@
 html {
   background-color: #6699CC;
   font: normal 100%/1.4 'Rosario', sans-serif;
-
+  min-width: 228px;
 }
 
 .home {
@@ -26,15 +26,33 @@ article {
 
 }
 
-.social-media img {
+.nav-top {
+  width: 96%;
   padding: 2%;
-  display: block;
-  width: 15%;
+  background-color: #FFF;
+  border-radius: 5px;
+
+  text-align: center;
+
+  margin-top: -.2em;
+}
+
+.nav-top a {
+  text-decoration: none;
+  padding: 1% 2%;
+  color: #000;
+  font-weight: bold;
 
 }
 
+.social-media img {
+  padding: 2% 2% 2% 0%;
+  display: block;
+  width: 15%;
+}
+
 .social-media-2 img {
-  padding: 2%;
+  padding: 2% 2% 2% 0%;
   display: inline-block;
   width: 15%;
 
@@ -47,7 +65,7 @@ article {
 
 .social-media-2 {
   padding-left: -10em;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
 }
 
 .name-card {
@@ -92,23 +110,8 @@ span {
   font-weight: bold;
 }
 
-.my-pic {
+.my-work img {
   width: 100%;
-}
-
-.button {
-  font-variant: none;
-  font-size: 1.1em;
-  font-weight: bold;
-  text-align: center;
-
-  background-color: #CCC;
-  margin-left: -1%;
-  margin-bottom: 3%;
-  padding: 4% 5%;
-  float: left;
-  clear: all;
-  border-radius: 5px;
 }
 
 .my-work {
@@ -116,7 +119,18 @@ span {
   padding: 3% 4% 3% 4%;
   margin-bottom: 2%;
   border-radius: 5px;
-  width: 90%;
+  width: 92%;
+}
+
+.page-end {
+  padding: 1% 2% 1% 0%;
+  border-top: 2px;
+  border-color: #fff;
+  float: left;
+  width: 100%;
+
+  font-size: .75em;
+  color: #fff;
 }
 
 
@@ -124,7 +138,8 @@ span {
 
 @media only screen and (min-width: 25em) {
 
-.social-media img {
+.social-media img,
+.social-media-2 img {
   width: 9%
 }
 
@@ -146,8 +161,9 @@ h1 {
 
 .social-media img,
 .social-media-2 img {
-  width: 8%;
+  width: 7%;
   display: inline-block;
+  padding: 2% 2% 2% 0%;
 }
 
   .social-media {
@@ -223,7 +239,7 @@ h1 {
 
 .social-media img,
 .social-media-2 img {
-  padding: 1% 1% 1.1% 1%;
+  padding: 1% 1% 1.1% 0%;
 }
 
 .content {

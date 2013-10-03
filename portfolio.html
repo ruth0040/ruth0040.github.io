@@ -1,17 +1,10 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Robyn Rutherford</title>
-  <link rel="stylesheet" href="css/general.css">
-  <link href='http://fonts.googleapis.com/css?family=Rosario:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-  <meta name="handheldfriendly" content="true">
-  <meta name="mobileoptimized" content="240">
-  <meta name="viewport" content="width=device-width;initial-scale=1">
-</head>
+---
+layout: default
+title: Portfolio
+---
 
-<body>
-  <article>
+<html>
+
     <header class="social-media-2">
       <a href="http://www.facebook.com/RutherfordRobyn"><img src="images/facebook.svg" alt="face book"></a>
       <a href="https://twitter.com/RutherfordRobyn"><img src="images/twitter.svg" alt="twitter"></a>
@@ -19,12 +12,19 @@
       <a href="mailto:rrutherford6591@hotmail.ca"><img src="images/mail.svg" alt="Email"></a>
     </header>
 
-    <img src="images/product.jpg" alt="giftcard packeage design" class="my-work">
-    <img src="images/vegas-website.jpg" alt="Website for local event" class="my-work">
-    <img src="images/ice-cream.jpg" alt="ice cream photography" class="my-work">
+    {% for page in site.pages %}
+      {% if page.category == "art-work" %}
+      <div class="my-work">
+        <h2>{{page.name}}</h2>
+        {{page.content}}
+      </div>
+      {% endif %}
+    {% endfor %}
 
-  </article>
+    <footer>
+      {% include footer.html %}
 
-</body>
+    </footer>
+
 
 </html>
