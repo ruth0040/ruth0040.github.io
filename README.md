@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Robyn's Portfolio 2
 =======
 
