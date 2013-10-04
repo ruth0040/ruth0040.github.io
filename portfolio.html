@@ -16,7 +16,7 @@ title: Portfolio
       {% if page.category == "art-work" %}
       <div class="my-work">
         <h2>{{page.name}}</h2>
-        {{page.content}}
+        {{page.content | markdownify}}
       </div>
       {% endif %}
     {% endfor %}
